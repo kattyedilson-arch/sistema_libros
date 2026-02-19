@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.4.0">
+  <diagram name="Secuencia Registrar Préstamo (como ejemplo)" id="zmkx5CVrmN-2NCg_WbGG">
+    <mxGraphModel dx="719" dy="369" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8FL_Kr_GMS-aoDefZ9_M-8" parent="1" style="swimlane;startSize=30;horizontal=0;rounded=1;fillColor=#dae8fc;" value="Bibliotecario" vertex="1">
+          <mxGeometry height="410" width="90" x="110" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="8FL_Kr_GMS-aoDefZ9_M-9" parent="1" style="swimlane;startSize=30;horizontal=0;rounded=1;fillColor=#e1d5e7;" value="Sistema (Gestión Préstamos)" vertex="1">
+          <mxGeometry height="400" width="90" x="360" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="8FL_Kr_GMS-aoDefZ9_M-10" parent="1" style="swimlane;startSize=30;horizontal=0;rounded=1;fillColor=#d5e8d4;" value="Sistema (Multas)" vertex="1">
+          <mxGeometry height="400" width="100" x="620" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="8FL_Kr_GMS-aoDefZ9_M-11" edge="1" parent="1" source="8FL_Kr_GMS-aoDefZ9_M-8" style="edgeStyle=elbowEdgeStyle;endArrow=block;endFill=1;" target="8FL_Kr_GMS-aoDefZ9_M-9" value="Solicita registro">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8FL_Kr_GMS-aoDefZ9_M-12" edge="1" parent="1" source="8FL_Kr_GMS-aoDefZ9_M-9" style="edgeStyle=elbowEdgeStyle;endArrow=block;endFill=1;dashed=0;" target="8FL_Kr_GMS-aoDefZ9_M-9" value="Crea préstamo">
+          <mxGeometry relative="1" x="-0.3333" y="51" as="geometry">
+            <mxPoint x="-1" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8FL_Kr_GMS-aoDefZ9_M-13" edge="1" parent="1" style="edgeStyle=elbowEdgeStyle;endArrow=block;endFill=1;" value="Solicita validación de multas">
+          <mxGeometry relative="1" x="-0.0857" y="-40" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="450" y="352.5" as="sourcePoint" />
+            <mxPoint x="620" y="347.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8FL_Kr_GMS-aoDefZ9_M-14" edge="1" parent="1" source="8FL_Kr_GMS-aoDefZ9_M-10" style="edgeStyle=elbowEdgeStyle;endArrow=block;endFill=1;dashed=0;" target="8FL_Kr_GMS-aoDefZ9_M-10" value="Valida multas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8FL_Kr_GMS-aoDefZ9_M-15" edge="1" parent="1" source="8FL_Kr_GMS-aoDefZ9_M-9" style="edgeStyle=elbowEdgeStyle;endArrow=block;endFill=1;" target="8FL_Kr_GMS-aoDefZ9_M-8" value="Confirma préstamo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

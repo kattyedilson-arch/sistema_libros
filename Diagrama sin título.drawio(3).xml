@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.4.0">
+  <diagram name="Clases (Estilo Ejemplo)" id="SFfjRGLTZ8V8zUkvkbkN">
+    <mxGraphModel dx="1158" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-12" parent="1" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;fontStyle=1;align=center;" value="Estudiante" vertex="1">
+          <mxGeometry height="30" width="180" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-13" parent="1" style="text;align=left;verticalAlign=top;" value="id: String\n&#xa;nombre: String\n&#xa;email: String\n&#xa;estadoCuenta: String" vertex="1">
+          <mxGeometry height="90" width="180" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-14" parent="1" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;fontStyle=1;align=center;" value="Bibliotecario" vertex="1">
+          <mxGeometry height="30" width="180" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-15" parent="1" style="text;align=left;verticalAlign=top;" value="id: String\n&#xa;nombre: String\n&#xa;usuario: String" vertex="1">
+          <mxGeometry height="70" width="180" x="40" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-16" parent="1" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;fontStyle=1;align=center;" value="Libro" vertex="1">
+          <mxGeometry height="30" width="200" x="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-17" parent="1" style="text;align=left;verticalAlign=top;" value="isbn: String\n&#xa;titulo: String\n&#xa;autor: String\n&#xa;ejemplaresDisponibles: int" vertex="1">
+          <mxGeometry height="80" width="200" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-18" parent="1" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;fontStyle=1;align=center;" value="Prestamo" vertex="1">
+          <mxGeometry height="30" width="220" x="340" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-19" parent="1" style="text;align=left;verticalAlign=top;" value="id: String\n&#xa;fechaInicio: Date\n&#xa;fechaCompromiso: Date\n&#xa;estado: String" vertex="1">
+          <mxGeometry height="80" width="220" x="340" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-20" parent="1" style="shape=rectangle;rounded=0;whiteSpace=wrap;html=1;fontStyle=1;align=center;" value="Multa" vertex="1">
+          <mxGeometry height="30" width="180" x="680" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-21" parent="1" style="text;align=left;verticalAlign=top;" value="id: String\n&#xa;monto: double\n&#xa;estado: String" vertex="1">
+          <mxGeometry height="70" width="180" x="680" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-22" edge="1" parent="1" source="NKLXn-3JhGHXGZ2im7fL-12" style="endArrow=none;strokeWidth=1;labelBackgroundColor=#ffffff;" target="NKLXn-3JhGHXGZ2im7fL-18" value="1         0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-23" edge="1" parent="1" source="NKLXn-3JhGHXGZ2im7fL-14" style="endArrow=none;strokeWidth=1;labelBackgroundColor=#ffffff;" target="NKLXn-3JhGHXGZ2im7fL-18" value="1         0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-24" edge="1" parent="1" source="NKLXn-3JhGHXGZ2im7fL-16" style="endArrow=none;strokeWidth=1;labelBackgroundColor=#ffffff;" target="NKLXn-3JhGHXGZ2im7fL-18" value="1         0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NKLXn-3JhGHXGZ2im7fL-25" edge="1" parent="1" source="NKLXn-3JhGHXGZ2im7fL-18" style="endArrow=none;strokeWidth=1;labelBackgroundColor=#ffffff;" target="NKLXn-3JhGHXGZ2im7fL-20" value="1         0..1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
